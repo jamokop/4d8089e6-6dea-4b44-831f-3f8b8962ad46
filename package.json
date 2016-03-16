@@ -1,11 +1,15 @@
 {
-    "name": "4d8089e6-6dea-4b44-831f-3f8b8962ad46",
-    "description":"challenge-frontend-level-1",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-    	"gulp": ">=3.9.1",
-  		"gulp-sass": ">=2.2.0",
-  		"gulp-autoprefixer": ">=3.1.0"
-  	}
+  "name": "4d8089e6-6dea-4b44-831f-3f8b8962ad46",
+  "description": "challenge-frontend-level-1",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "gulp": ">=3.9.1",
+    "gulp-sass": ">=2.2.0",
+    "gulp-autoprefixer": ">=3.1.0"
+  },
+  "devDependencies": {
+    "gulp-cssmin": "^0.1.7",
+    "gulp-sass": "^2.2.0"
+  }
 }

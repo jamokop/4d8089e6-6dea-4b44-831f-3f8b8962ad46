@@ -73,6 +73,24 @@ body {
 
 }
 
+.header-2 {
+	width:100%;
+	background-color:$headercolor;
+	
+	.container {
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+	.title {
+		font-size:36px;
+		color:white;
+		background-color:rgb(238,172,86);
+		line-height:1.2;
+		font-family: 'Montserrat';
+		width:60%;
+	}
+}
+
 #top {
 	height:340px;
 	background-color:$headercolor;
@@ -138,8 +156,9 @@ body {
 	font-family: 'Montserrat';
 }
 
-.submenu, .contact {
-  	width:300px;
+
+.aside {
+	margin-top:30px;
 }
 
 .submenu {
@@ -273,12 +292,14 @@ textarea {
 
 @media screen and (min-width: 1200px) {
 	.submenu, .contact {
+		width:300px;
 		float:right;
 	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 	.submenu, .contact {
+		width:300px;
 		float:right;
 	}
 }
@@ -303,8 +324,9 @@ textarea {
 
 	header {
 		.header-1 {
-			.block {
+			.container {
 				width:100%;
+				padding:0;
 				text-align: center;
 			}		
 		}
@@ -313,11 +335,10 @@ textarea {
 			display:none;
 		}
 	}
-
-	.aside {
-		margin-top: 20px;
+	
+	.submenu, .contact {
+		max-width:300px;
 	}
-
 
 }
 
@@ -334,21 +355,40 @@ textarea {
 		.nav li {
 			display:block;
 			width:100%;
-		}
-
-		
+		}	
 	}
 
 	header {
 		.header-1 {
-			.block {
+			.container {
 				width:100%;
+				padding:0;
 				text-align: center;
-			}		
+			}	
 		}
 
 		.nav {
 			display:none;
 		}
 	}	
+
+	.more-in-series li .title, .related-articles .title {
+		font-size: 20px;	
+	}
+
+	.submenu, .contact {
+  		max-width:500px;
+  		margin:0 auto 30px auto;
+	}
+
+	.more-in-series .header span, .related-articles .header span {
+		font-size:28px;
+	}
+
+	.more-in-series .header, .related-articles .header {
+		height:22px;
+	}
+
 }
+
+
